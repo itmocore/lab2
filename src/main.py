@@ -35,7 +35,7 @@ bibs = random.sample(rows, 20)
 with open('bibliography.txt', 'w', encoding='utf-8') as f:
     for i, b in enumerate(bibs, 1):
         f.write(f"{i}. {b[author_key]}. {b[title_key]} - {b[date_key]}\n")
-print('file done')
+print('file done');input("press enter")
 
 # xml
 tree = ET.parse('currency.xml')
